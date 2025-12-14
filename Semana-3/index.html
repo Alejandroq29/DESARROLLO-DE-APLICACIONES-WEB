@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bienvenido a mi portal Web</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <h1>CONOCE MI SITIO WEB</h1>
+    <p>En mi sitio <strong>Web</strong>, conoceras mi desempeño como estudiante <em>universitario</em>.</p>
+  </header>
+
+  <nav class="site-nav">
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#articulo">Artículo</a></li>
+      <li><a href="#tabla">Tabla</a></li>
+      <li><a href="#formulario">Formulario</a></li>
+      <li><a href="https://github.com/Alejandroq29/2526-DESARROLLO-DE-APLICACIONES-WEB" target="_blank">MDN</a></li>
+    </ul>
+  </nav>
+
+  <main id="inicio" class="container">
+    <section class="hero">
+      <h2>Conozca la Universidad Estatal Amazonica</h2>
+      <p>A traves de esta presentación de <strong>imagen</strong> y <strong>video</strong>, conoceras la UEA.</p>
+
+      <!-- Imagen desde el repositorio -->
+      <img src="assets/imag/Pregrado.jpg"  alt="Imagen de portada representativa" class="hero-media"/> 
+      <img src="assets/imag/Tecnologia.jpg" alt="Imagen de final" class= "hero-media"/>
+
+      <!-- Video desde el repositorio -->
+      <video class="hero-media" controls>
+        <source src="assets/imag/video/UEA.mp4" type="video/mp4"/>
+      </video>
+    </section>
+
+    <section id="articulo" class="content">
+      <article>
+        <h3>EVA Pregrado</h3>
+        <p>Se mostrara una lista de algunas asignaturas de 4to semestre de manera <em>accesible</em> y <em>estructurado</em>. </p>
+
+        <div class="lists">
+          <h3>Asignaturas</h3>
+          <div class="list-columns">
+            <div>
+              <h4>Lista ordenada</h4>
+              <ol>
+                <li>Desarrollo de aplicación web</li>
+                <li>Base de datos</li>
+                <li>Sistema digitales</li>
+              </ol>
+            </div>
+            <div>
+              <h4>Lista de entrega</h4>
+              <ul>
+                <li>Evaluación</li>
+                <li>Foros</li>
+                <li>Actividades</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    
+    <section id="tabla" class="table-section">
+      <h3>Tabla de calificaciones</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Asignaturas</th>
+            <th>Notas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Desarrollo de aplicación web</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Base de datos</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>Sistema digitales</td>
+            <td>8,5</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="formulario" class="form-section">
+      <h3>Contáctame</h3>
+      <form action="#" method="post">
+        <div class="form-field">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required/>
+        </div>
+
+        <div class="form-field">
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required/>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025-2026 DESARROLLO-DE-APLICACIONES-WEB</p>
+  </footer>
+</body>
+</html>
